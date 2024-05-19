@@ -16,7 +16,6 @@ let board = [
 */
 
 let currentHumanPlayer = 1;
-let currentAiPlayer = 2;
 
 let boardOffsetX = 0;
 let boardOffsetY = 0;
@@ -194,7 +193,6 @@ function mousePressed() {
   if (mouseX > width / 2 - 120 && mouseX < width / 2 + 120 &&
     mouseY > 150 && mouseY < 250) {
     currentHumanPlayer = 1;
-    currentAiPlayer = 2;
     gameMode++;
     resetGame();
     if (gameMode > 2) gameMode = 0;
